@@ -8,26 +8,27 @@
 
   <body>
 <header id="header">
-  <table style="width: 100%;">
-    <tr>
-      <td><img width="500px" id="header-img" src="/product-landing-page-logo.png"></td>
-      <td style="align-content: right;"><nav id="nav-bar">
-        <ul id="nav-link">
-          <li style="display: inline;"> <a href="#features">Features</a></li>
-          <li style="display: inline">How It Works</li>
-          <li style="display: inline">Pricing</li>
+  
+  <div style="display: flex;flex-direction:row;width: 100%;">
+    <div style="flex-grow: 1"><img id="header-img" src="/product-landing-page-logo.png" width="500px"></div>
+    <div style="flex-grow: 2; align-items: right;"><nav id="nav-bar">
+        <ul >
+          <li class="nav-link" style="display: inline;" href="#features"> Features</li>
+          <li class="nav-link" style="display: inline" href="#features">How It Works</li>
+          <li class="nav-link" style="display: inline" href="#features">Pricing</li>
 
         </ul>
-      </nav></td>
-    </tr>
-  </table>
-  <form id="form">
-    <input id="email" placeholder="Enter your email address" type="email">
-    <input id="submit" type="button" value="Submit" onclick="window.location.href='www.freecodecamp.com/email-submit';">
+      </nav>
+    </div>
+    </div>
+    
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input id="email" name="email" placeholder="Enter your email address" type="email">
+    <input id="submit" type="submit" value="Submit" onclick="window.location.href='www.freecodecamp.com/email-submit';">
   </form>
   <div id="features">
-  <div id="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0OttfOXsP2M" 
+  <div>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0OttfOXsP2M" 
     title="YouTube video player"
      frameborder="0" allow="accelerometer; autoplay
      clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
